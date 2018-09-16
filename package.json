@@ -1,0 +1,27 @@
+{
+  "name": "sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sls": "sls",
+    "tsc": "tsc",
+    "start": "concurrently \"npm run watch\" \"npm run parcel\" \"npm run start-sls\"",
+    "watch": "tsc -w",
+    "parcel": "parcel handler.js",
+    "start-sls": "sls offline start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^1.31.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "parcel-bundler": "^1.9.7",
+    "serverless-offline": "^3.25.12",
+    "typescript": "^3.0.3"
+  }
+}
